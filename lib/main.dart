@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:umart/login_page.dart';
+import 'package:umart/auth.dart';
+import 'package:umart/root_page.dart';
 
 
 void main() {
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
 
-      home: new LogInPage(),
+      home: new RootPage(auth:new Auth()),
     );
   }
 }
